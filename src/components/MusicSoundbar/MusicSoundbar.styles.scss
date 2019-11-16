@@ -1,0 +1,45 @@
+@import '../../assets/css/basic.scss';
+
+.music-sound-bar {
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__bar {
+    appearance: none;
+    background-color: $gray;
+    border: 3px solid $black;
+    border-radius: 75px;
+    width: 100%;
+    height: 4px;
+    margin-right: 12px;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      background-color: $white;
+      border: 3px solid $black;
+      width: 12px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  // &__controller {
+  //   background-color: $white;
+  //   border: 3px solid $black;
+  //   width: 8px;
+  //   height: 25px;
+  //   cursor: pointer;
+  //   position: absolute;
+  //   top: -12px;
+  // }
+  &__icon {
+    width: 48px;
+    text-align: end;
+    padding: 0 8px;
+  }
+}

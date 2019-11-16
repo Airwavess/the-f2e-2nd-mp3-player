@@ -1,0 +1,45 @@
+$basic-color: #ff8c6e;
+$white: #ffffff;
+$gray: #c5c5c5;
+$light-gray: #dfdfdf;
+$black: #000000;
+
+@mixin button {
+  position: relative;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  div {
+    position: relative;
+    background-color: $white;
+    border-radius: 50%;
+    border: 3px solid $black;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $light-gray;
+    }
+    &:active {
+      top: 4px;
+      left: 4px;
+    }
+  }
+  &::before {
+    content: '';
+    background-color: $gray;
+    border-radius: 50%;
+    border: 3px solid $black;
+    padding: 12px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+}
