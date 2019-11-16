@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/the-f2e-2nd-mp3-player/precache-manifest.b0d1f10787fdfae327653ccf8fe5670f.js"
+  "/the-f2e-2nd-mp3-player/precache-manifest.e48e1727ca57884bbbe024ba60d15297.js"
 );
 
 self.addEventListener('message', (event) => {
