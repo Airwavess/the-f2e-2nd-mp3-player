@@ -15,9 +15,9 @@ const musicDB = [
     name: 'acousticbreeze',
     time: '2:37',
     album: 'acoustic',
-    artists: 'someoneB'
+    artist: 'someoneB'
   },
-  { name: 'buddy', time: '2:02', album: 'acoustic', artists: 'someoneB' }
+  { name: 'buddy', time: '2:02', album: 'acoustic', artist: 'someoneB' }
 ]
 
 export default musicDB

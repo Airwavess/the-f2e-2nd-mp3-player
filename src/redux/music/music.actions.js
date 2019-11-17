@@ -30,3 +30,8 @@ export const storeMusicData = payload => ({
   type: musicTypes.STORE_MUSIC_DATA,
   payload
 })
+
+export const filterMusic = payload => ({
+  type: musicTypes.FILTER_MUSIC,
+  payload
+})

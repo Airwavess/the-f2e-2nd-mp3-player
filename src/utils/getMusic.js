@@ -81,7 +81,7 @@ const data = {
     cover: Cute,
     mpe: MP3Cute
   },
-  ukuletel: {
+  ukulele: {
     cover: Ukulele,
     mp3: MP3Ukulele
   }

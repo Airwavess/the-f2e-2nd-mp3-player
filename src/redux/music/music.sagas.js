@@ -3,9 +3,14 @@ import musicTypes from './music.types'
 import { storeMusicData } from './music.actions'
 import db from '../../utils/db'
 
-function* fetchMusicDataBegin(payload) {
-  const query = payload.query
-  if (typeof query === 'undefined') yield put(storeMusicData(db))
+function* fetchMusicDataBegin(action) {
+  if (typeof action.payload === 'undefined') {
+    yield put(storeMusicData(db))
+  } else {
+    const query = action.payload.query
+    const queryset = db.filter(music => music[query.key] === query.value)
+    yield put(storeMusicData(queryset))
+  }
 }
 
 export default function* fetchMusicData() {

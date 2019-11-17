@@ -9,17 +9,8 @@ const INITIAL_STATE = {
     album: 'all',
     artist: 'someoneA'
   },
-  musics: [
-    { name: 'betterdays', time: '2:33', album: 'all', artist: 'someoneA' },
-    { name: 'dubstep', time: '2:04', album: 'all', artist: 'someoneA' },
-    { name: 'energy', time: '2:59', album: 'all', artist: 'someoneA' },
-    { name: 'epic', time: '2:58', album: 'all', artist: 'someoneA' },
-    { name: 'funnysong', time: '3:07', album: 'all', artist: 'someoneA' },
-    { name: 'onceagain', time: '3:51', album: 'all', artist: 'someoneA' },
-    { name: 'slowmotion', time: '3:26', album: 'all', artist: 'someoneA' },
-    { name: 'sunny', time: '2:20', album: 'all', artist: 'someoneA' },
-    { name: 'tenderness', time: '2:03', album: 'all', artist: 'someoneA' }
-  ]
+  musics: [],
+  filteredMusics: []
 }
 
 const musicReducer = (state = INITIAL_STATE, action) => {
@@ -66,7 +57,15 @@ const musicReducer = (state = INITIAL_STATE, action) => {
     case musicTypes.STORE_MUSIC_DATA:
       return {
         ...state,
-        musics: action.payload
+        musics: action.payload,
+        filteredMusics: action.payload
+      }
+    case musicTypes.FILTER_MUSIC:
+      return {
+        ...state,
+        filteredMusics: state.musics.filter(
+          music => music[action.payload.key] === action.payload.value
+        )
       }
     default:
       return state

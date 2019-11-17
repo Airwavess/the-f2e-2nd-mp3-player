@@ -10,7 +10,7 @@ const MusicList = props => {
 
   const { handleToggleMenu } = props
 
-  const musicList = useSelector(state => state.musicReducer.musics)
+  const musicList = useSelector(state => state.musicReducer.filteredMusics)
 
   const handleSelectMusic = music => {
     dispatch(selectMusic(music))
