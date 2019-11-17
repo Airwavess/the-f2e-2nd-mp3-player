@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a83f1f518f8079eaf6f17d2eca4ae279",
+    "revision": "1b8b2ce980aec05cda960c4fc4ca4801",
     "url": "/the-f2e-2nd-mp3-player/index.html"
   },
   {
-    "revision": "5bd4afb52f98e979c24c",
+    "revision": "4ddd89e2ebdffda9f22d",
     "url": "/the-f2e-2nd-mp3-player/static/css/main.99297812.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-f2e-2nd-mp3-player/static/js/2.5e70c15e.chunk.js"
   },
   {
-    "revision": "5bd4afb52f98e979c24c",
-    "url": "/the-f2e-2nd-mp3-player/static/js/main.e3d26976.chunk.js"
+    "revision": "4ddd89e2ebdffda9f22d",
+    "url": "/the-f2e-2nd-mp3-player/static/js/main.cc99a82a.chunk.js"
   },
   {
     "revision": "ab4cbd7b28aa26b2e9b5",
